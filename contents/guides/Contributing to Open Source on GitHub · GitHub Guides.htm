@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://guides.github.com/activities/contributing-to-open-source/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <title>
+    
+      Contributing to Open Source on GitHub · GitHub Guides
+    
+  </title>
+  <link rel="icon" type="image/x-icon" href="https://guides.github.com/favicon.ico">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="https://guides.github.com/components/gridism/gridism.css">
+  <link rel="stylesheet" href="https://guides.github.com/components/primer/markdown.css">
+  <link rel="stylesheet" href="https://guides.github.com/components/primer/octicons.css">
+  <link href="https://guides.github.com/stylesheets/main.css" rel="stylesheet">
+  <link href="https://guides.github.com/stylesheets/pygments.css" rel="stylesheet">
+
+  <script type="text/javascript" async="" src="./Contributing to Open Source on GitHub · GitHub Guides_files/ga.js"></script><script src="./Contributing to Open Source on GitHub · GitHub Guides_files/jquery.js" type="text/javascript"></script>
+  <script src="./Contributing to Open Source on GitHub · GitHub Guides_files/snap.svg-min.js" type="text/javascript"></script>
+  <script src="./Contributing to Open Source on GitHub · GitHub Guides_files/application.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3769691-29']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <ul class="links">
+        <li><a href="https://www.youtube.com/githubguides">Video Guides</a></li>
+        <li><a href="https://help.github.com/">GitHub Help</a></li>
+        <li class="nav-github"><a href="https://github.com/">GitHub.com</a></li>
+        <li class="nav-rss"><a href="https://guides.github.com/feed/index.xml"><span class="octicon octicon-rss"></span></a></li>
+      </ul>
+
+      <a href="https://guides.github.com/"><img src="./Contributing to Open Source on GitHub · GitHub Guides_files/logo@2x.png" width="136" height="25" alt="GitHub Guides logo"></a>
+    </div>
+  </header>
+
+  <article class="full">
+  <div class="article-heading js-article-heading js-geopattern" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjkiIGhlaWdodD0iMTY5Ij48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJyZ2IoMTM5LCA5MCwgNDEpIiAgLz48ZyBmaWxsPSIjZGRkIiBzdHlsZT0ib3BhY2l0eTowLjEwNjY2NjY2NjY2NjY2NjY3OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4LjI5LC0yOC4yOSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiNkZGQiIHN0eWxlPSJvcGFjaXR5OjAuMTA2NjY2NjY2NjY2NjY2Njc7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDEuNDUwMDAwMDAwMDAwMDIsLTI4LjI5KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iI2RkZCIgc3R5bGU9Im9wYWNpdHk6MC4xMDY2NjY2NjY2NjY2NjY2NzsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yOC4yOSwxNDEuNDUpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjZGRkIiBzdHlsZT0ib3BhY2l0eTowLjEwNjY2NjY2NjY2NjY2NjY3OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQxLjQ1MDAwMDAwMDAwMDAyLDE0MS40NSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMTU7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAsLTE0LjE0NSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMTU7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAsMTU1LjU5NDk5OTk5OTk5OTk3KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iIzIyMiIgc3R5bGU9Im9wYWNpdHk6MC4xNTsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4LjI5LC0yOC4yOSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMTU7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyOC4yOSwxNDEuNDUpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjZGRkIiBzdHlsZT0ib3BhY2l0eTowLjE0MTMzMzMzMzMzMzMzMzM0OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTYuNTgwMDAwMDAwMDAwMDA1LC0xNC4xNDUpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjZGRkIiBzdHlsZT0ib3BhY2l0eTowLjE0MTMzMzMzMzMzMzMzMzM0OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTYuNTgwMDAwMDAwMDAwMDA1LDE1NS41OTQ5OTk5OTk5OTk5Nykgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMDQ2OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODQuODcsLTI4LjI5KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iIzIyMiIgc3R5bGU9Im9wYWNpdHk6MC4wNDY7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4NC44NywxNDEuNDUpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjMjIyIiBzdHlsZT0ib3BhY2l0eTowLjA5ODsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMy4xNiwtMTQuMTQ1KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iIzIyMiIgc3R5bGU9Im9wYWNpdHk6MC4wOTg7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTMuMTYsMTU1LjU5NDk5OTk5OTk5OTk3KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iI2RkZCIgc3R5bGU9Im9wYWNpdHk6MC4xMDY2NjY2NjY2NjY2NjY2NzsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yOC4yOSwwLjApIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjZGRkIiBzdHlsZT0ib3BhY2l0eTowLjEwNjY2NjY2NjY2NjY2NjY3OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQxLjQ1MDAwMDAwMDAwMDAyLDAuMCkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMDI4NjY2NjY2NjY2NjY2NjY3OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wLDE0LjE0NTAwMDAwMDAwMDAwMykgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMDk4OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjguMjksMC4wKSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iI2RkZCIgc3R5bGU9Im9wYWNpdHk6MC4xMjQwMDAwMDAwMDAwMDAwMTsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU2LjU4MDAwMDAwMDAwMDAwNSwxNC4xNDUwMDAwMDAwMDAwMDMpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjMjIyIiBzdHlsZT0ib3BhY2l0eTowLjAyODY2NjY2NjY2NjY2NjY2NzsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg0Ljg3LDAuMCkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMDI4NjY2NjY2NjY2NjY2NjY3OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEzLjE2LDE0LjE0NTAwMDAwMDAwMDAwMykgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiNkZGQiIHN0eWxlPSJvcGFjaXR5OjAuMDU0NjY2NjY2NjY2NjY2Njc7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjguMjksMjguMjkwMDAwMDAwMDAwMDA2KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iI2RkZCIgc3R5bGU9Im9wYWNpdHk6MC4wNTQ2NjY2NjY2NjY2NjY2NzsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0MS40NTAwMDAwMDAwMDAwMiwyOC4yOTAwMDAwMDAwMDAwMDYpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjMjIyIiBzdHlsZT0ib3BhY2l0eTowLjEzMjY2NjY2NjY2NjY2NjY1OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wLDQyLjQzNSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiNkZGQiIHN0eWxlPSJvcGFjaXR5OjAuMTQxMzMzMzMzMzMzMzMzMzQ7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyOC4yOSwyOC4yOTAwMDAwMDAwMDAwMDYpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjMjIyIiBzdHlsZT0ib3BhY2l0eTowLjA5ODsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU2LjU4MDAwMDAwMDAwMDAwNSw0Mi40MzUpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjZGRkIiBzdHlsZT0ib3BhY2l0eTowLjEwNjY2NjY2NjY2NjY2NjY3OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODQuODcsMjguMjkwMDAwMDAwMDAwMDA2KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iIzIyMiIgc3R5bGU9Im9wYWNpdHk6MC4wMjg2NjY2NjY2NjY2NjY2Njc7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTMuMTYsNDIuNDM1KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iIzIyMiIgc3R5bGU9Im9wYWNpdHk6MC4wNjMzMzMzMzMzMzMzMzMzNDsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yOC4yOSw1Ni41ODAwMDAwMDAwMDAwMSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMDYzMzMzMzMzMzMzMzMzMzQ7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDEuNDUwMDAwMDAwMDAwMDIsNTYuNTgwMDAwMDAwMDAwMDEpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjMjIyIiBzdHlsZT0ib3BhY2l0eTowLjExNTMzMzMzMzMzMzMzMzM0OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wLDcwLjcyNTAwMDAwMDAwMDAyKSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iIzIyMiIgc3R5bGU9Im9wYWNpdHk6MC4wNDY7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyOC4yOSw1Ni41ODAwMDAwMDAwMDAwMSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMDgwNjY2NjY2NjY2NjY2NjY7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Ni41ODAwMDAwMDAwMDAwMDUsNzAuNzI1MDAwMDAwMDAwMDIpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjMjIyIiBzdHlsZT0ib3BhY2l0eTowLjAyODY2NjY2NjY2NjY2NjY2NzsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg0Ljg3LDU2LjU4MDAwMDAwMDAwMDAxKSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iI2RkZCIgc3R5bGU9Im9wYWNpdHk6MC4wNTQ2NjY2NjY2NjY2NjY2NzsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMy4xNiw3MC43MjUwMDAwMDAwMDAwMikgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMDI4NjY2NjY2NjY2NjY2NjY3OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4LjI5LDg0Ljg3KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iIzIyMiIgc3R5bGU9Im9wYWNpdHk6MC4wMjg2NjY2NjY2NjY2NjY2Njc7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDEuNDUwMDAwMDAwMDAwMDIsODQuODcpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjMjIyIiBzdHlsZT0ib3BhY2l0eTowLjA0NjsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMCw5OS4wMTUwMDAwMDAwMDAwMSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiNkZGQiIHN0eWxlPSJvcGFjaXR5OjAuMTI0MDAwMDAwMDAwMDAwMDE7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyOC4yOSw4NC44Nykgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMDYzMzMzMzMzMzMzMzMzMzQ7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Ni41ODAwMDAwMDAwMDAwMDUsOTkuMDE1MDAwMDAwMDAwMDEpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjZGRkIiBzdHlsZT0ib3BhY2l0eTowLjA1NDY2NjY2NjY2NjY2NjY3OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODQuODcsODQuODcpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjMjIyIiBzdHlsZT0ib3BhY2l0eTowLjA5ODsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExMy4xNiw5OS4wMTUwMDAwMDAwMDAwMSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiNkZGQiIHN0eWxlPSJvcGFjaXR5OjAuMDg5MzMzMzMzMzMzMzMzMzM7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjguMjksMTEzLjE2KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iI2RkZCIgc3R5bGU9Im9wYWNpdHk6MC4wODkzMzMzMzMzMzMzMzMzMzsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0MS40NTAwMDAwMDAwMDAwMiwxMTMuMTYpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjZGRkIiBzdHlsZT0ib3BhY2l0eTowLjA4OTMzMzMzMzMzMzMzMzMzOyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI4LjI5LC01Ni41ODAwMDAwMDAwMDAwMSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiNkZGQiIHN0eWxlPSJvcGFjaXR5OjAuMTQxMzMzMzMzMzMzMzMzMzQ7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAsMTI3LjMwNSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiNkZGQiIHN0eWxlPSJvcGFjaXR5OjAuMTQxMzMzMzMzMzMzMzMzMzQ7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAsLTQyLjQzNSkgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiMyMjIiIHN0eWxlPSJvcGFjaXR5OjAuMDYzMzMzMzMzMzMzMzMzMzQ7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyOC4yOSwxMTMuMTYpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjMjIyIiBzdHlsZT0ib3BhY2l0eTowLjA2MzMzMzMzMzMzMzMzMzM0OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjguMjksLTU2LjU4MDAwMDAwMDAwMDAxKSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iIzIyMiIgc3R5bGU9Im9wYWNpdHk6MC4xNTsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU2LjU4MDAwMDAwMDAwMDAwNSwxMjcuMzA1KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iIzIyMiIgc3R5bGU9Im9wYWNpdHk6MC4xNTsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU2LjU4MDAwMDAwMDAwMDAwNSwtNDIuNDM1KSByb3RhdGUoNDUsIDI4LjI5LCAyOC4yOSkiID48cmVjdCB4PSIyMC4wIiB5PSIwIiB3aWR0aD0iMjAuMCIgaGVpZ2h0PSI2MC4wIiAgLz48cmVjdCB4PSIwIiB5PSIyMC4wIiB3aWR0aD0iNjAuMCIgaGVpZ2h0PSIyMC4wIiAgLz48L2c+PGcgZmlsbD0iI2RkZCIgc3R5bGU9Im9wYWNpdHk6MC4wODkzMzMzMzMzMzMzMzMzMzsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg0Ljg3LDExMy4xNikgcm90YXRlKDQ1LCAyOC4yOSwgMjguMjkpIiA+PHJlY3QgeD0iMjAuMCIgeT0iMCIgd2lkdGg9IjIwLjAiIGhlaWdodD0iNjAuMCIgIC8+PHJlY3QgeD0iMCIgeT0iMjAuMCIgd2lkdGg9IjYwLjAiIGhlaWdodD0iMjAuMCIgIC8+PC9nPjxnIGZpbGw9IiNkZGQiIHN0eWxlPSJvcGFjaXR5OjAuMDg5MzMzMzMzMzMzMzMzMzM7IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4NC44NywtNTYuNTgwMDAwMDAwMDAwMDEpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjZGRkIiBzdHlsZT0ib3BhY2l0eTowLjE0MTMzMzMzMzMzMzMzMzM0OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEzLjE2LDEyNy4zMDUpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48ZyBmaWxsPSIjZGRkIiBzdHlsZT0ib3BhY2l0eTowLjE0MTMzMzMzMzMzMzMzMzM0OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEzLjE2LC00Mi40MzUpIHJvdGF0ZSg0NSwgMjguMjksIDI4LjI5KSIgPjxyZWN0IHg9IjIwLjAiIHk9IjAiIHdpZHRoPSIyMC4wIiBoZWlnaHQ9IjYwLjAiICAvPjxyZWN0IHg9IjAiIHk9IjIwLjAiIHdpZHRoPSI2MC4wIiBoZWlnaHQ9IjIwLjAiICAvPjwvZz48L3N2Zz4=);">
+    <div class="wrap">
+      <div class="icon-container">
+        <span class="mega-octicon octicon-repo"></span>
+      </div>
+      <h1>Contributing to Open Source on GitHub</h1>
+      <span class="article-read-time article-meta">
+        <span class="octicon octicon-clock"></span> 6 minute read
+      </span>
+      
+    </div>
+  </div>
+
+
+  <div class="wrap">
+    
+    <div class="toc-wrapper">
+      <ol class="toc js-toc"><li><a href="https://guides.github.com/activities/contributing-to-open-source/#intro" class="active">Intro</a></li><li><a href="https://guides.github.com/activities/contributing-to-open-source/#project">A Typical Project</a></li><li><a href="https://guides.github.com/activities/contributing-to-open-source/#contributing">Contributing to a Project</a></li></ol>
+    </div>
+    
+
+    <div class="markdown-body content-body ">
+      <p><a id="intro" title="Intro" class="toc-item"></a></p>
+
+<p>A great way to get involved in open source is to contribute to the existing projects you’re using. GitHub is home to more than 5 million open source projects. There are projects for every skill set like <a href="https://github.com/sinker/tacofancy">recipes</a>, <a href="https://github.com/tobiasahlin/SpinKit">HTML/CSS</a>, <a href="https://github.com/sferik/t">Ruby</a>, <a href="https://github.com/dfm/emcee">Astrophysics</a> and many more. This guide will cover what you might find in a typical project and how to make a great contribution.</p>
+
+<h2>Find Projects</h2>
+
+<p>We recommend that you start by finding a project that you’re already (or are interested in) using. Here are a few great places to look:</p>
+
+<ul>
+<li><a href="https://github.com/explore">GitHub Explore</a>: Popular and trending projects.</li>
+<li><a href="https://github.com/stars?direction=desc&sort=created">GitHub Stars</a>: Projects starred by other people.</li>
+<li><a href="https://github.com/showcases">GitHub Showcases</a>: A way to discover related repositories.</li>
+<li><a href="http://news.layervault.com/">LayerVault News</a>: Front-end and design projects.</li>
+</ul>
+
+
+<p><img src="./Contributing to Open Source on GitHub · GitHub Guides_files/layervault.png" alt="layervault"></p>
+
+<p><a id="project" title="A Typical Project" class="toc-item"></a></p>
+
+<h2>A Typical Project</h2>
+
+<p>Below are some elements you’re likely to come across in an open source project on GitHub.</p>
+
+<h3>The Community</h3>
+
+<p>Projects often have a community around them, made up of other users in different (formal or informal) roles:</p>
+
+<ul>
+<li><strong>Owner</strong> is the user or organization that created the project has the project on their account.</li>
+<li><strong>Maintainers and Collaborators</strong> are the users primarily doing the work on a project and driving the direction. Oftentimes the owner and the maintainer are the same. They have write access to the repository.</li>
+<li><strong>Contributors</strong> is everyone who has had a pull request merged into a project.</li>
+<li><strong>Community Members</strong> are the users who often use and care deeply about the project and are active in discussions for features and pull requests.</li>
+</ul>
+
+
+<h3>The Docs</h3>
+
+<p>The what’s-what of common files in projects.</p>
+
+<h4>Readme</h4>
+
+<p>Nearly all GitHub projects include a <code>README.md</code> file. The readme provides a lay of the land for a project with details on how to use, build and sometimes contribute to a project.</p>
+
+<h4>Contributing</h4>
+
+<p>Projects and project maintainers vary, so the best way to contribute will also vary. Keep your eye open for a doc labeled <code>CONTRIBUTING</code>. Contributing docs detail the specifics about how a project’s maintainer would like to see patches or features contributed. This can include what tests to write, code syntax style or areas to focus on for patches.</p>
+
+<h4>License</h4>
+
+<p>A <code>LICENSE</code> file, well, is the license for the project. An open source project’s license informs users what they can and can’t do (e.g., use, modify, redistribute), and contributors, what they are allowing others to do. There are many ways to license and open source project, you can read more about what each license means at <a href="http://choosealicense.com/">choosealicense.com</a>.</p>
+
+<h4>Documentation and Wikis</h4>
+
+<p>Many larger projects go beyond a readme to give instructions for how people can use their project. In such cases you’ll often find a link to another file or a folder named ‘docs’ in the repository.</p>
+
+<p><img src="./Contributing to Open Source on GitHub · GitHub Guides_files/docs-folder.png" alt="bootstrap docs"></p>
+
+<p>Alternatively, the repository may instead use the GitHub wiki to break down documentation.</p>
+
+<p><img src="./Contributing to Open Source on GitHub · GitHub Guides_files/d3-wiki.png" alt="d3 wiki"></p>
+
+<p><a id="contributing" title="Contributing to a Project" class="toc-item"></a></p>
+
+<h2>Contributing to a Project</h2>
+
+<p>Now that you’ve found the material for understanding the project, here is how you can take action.</p>
+
+<h3>Create an Issue</h3>
+
+<p>If you find a bug in a project you’re using (and you don’t know how to fix it), have trouble following the documentation or have a question about the project – create an issue! There’s nothing to it and whatever issue you’re having, you’re likely not the only one, so others will find your issue helpful, too. For more information on how issues work, check out our <a href="http://guides.github.com/features/issues">Issues guide</a>.</p>
+
+<h4>Issues Pro Tips</h4>
+
+<ul>
+<li><strong>Check existing issues</strong> for your issue. Duplicating an issue is slower for both parties so search through open and closed issues to see if what you’re running into has been addressed already.</li>
+<li><strong>Be clear</strong> about what your problem is: what was the expected outcome, what happened instead? Detail how someone else can recreate the problem.</li>
+<li><strong>Link to demos</strong> recreating the problem on things like <a href="http://jsfiddle.net/">JSFiddle</a> or <a href="http://codepen.io/">CodePen</a>.</li>
+<li><strong>Include system details</strong> like what the browser, library or operating system you’re using and its version.</li>
+<li><strong>Paste error output</strong> or logs in your issue or in a <a href="http://gist.github.com/">Gist</a>. If pasting them in the issue, wrap it in three backticks: <code>```</code> so that it renders nicely.</li>
+</ul>
+
+
+<h3>Pull Request</h3>
+
+<p>If you’re able to patch the bug or add the feature yourself – fantastic, make a pull request with the code! Be sure you’ve read any documents on contributing, understand the license and have signed a CLA if required. Once you’ve submitted a pull request the maintainer(s) can compare your branch to the existing one and decide whether or not to incorporate (pull in) your changes.</p>
+
+<h4>Pull Request Pro Tips</h4>
+
+<ul>
+<li><strong><a href="http://guides.github.com/activities/forking/">Fork</a> the repository</strong> and clone it locally. Connect your local to the original ‘upstream’ repository by adding it as a remote. <strong>Pull in changes</strong> from ‘upstream’ often so that you stay up to date so that when you submit your pull request, merge conflicts will be less likely. See more detailed instructions <a href="https://help.github.com/articles/syncing-a-fork">here</a>.</li>
+<li><strong>Create a <a href="http://guides.github.com/introduction/flow/">branch</a></strong> for your edits.</li>
+<li><strong>Be clear</strong> about what problem is occurring and how someone can recreate that problem or why your feature will help. Then be equally as clear about the steps you took to make your changes.</li>
+<li><strong>It’s best to test</strong>. Run your changes against any existing tests if they exist and create new ones when needed. Whether tests exist or not, make sure your changes don’t break the existing project.</li>
+<li><strong>Include screenshots</strong> of the before and after if your changes include differences in HTML/CSS. Drag and drop the images into the body of your pull request.</li>
+<li><strong>Contribute in the style of the project</strong> to the best of your abilities. This may mean using indents, semi colons or comments differently than you would in your own repository, but makes it easier for the maintainer to merge, others to understand and maintain in the future.</li>
+</ul>
+
+
+<h4>Open Pull Requests</h4>
+
+<p>Once you’ve opened a pull request a discussion will start around your proposed changes. Other contributors and users may chime in, but ultimately the decision is made by the maintainer(s). You may be asked to make some changes to your pull request, if so, add more commits to your branch and push them – they’ll automatically go into the existing pull request.</p>
+
+<p><img src="./Contributing to Open Source on GitHub · GitHub Guides_files/convo.png" alt="pr convo"></p>
+
+<p>If your pull request is merged – great! If it is not, no sweat, it may not be what the project maintainer had in mind, or they were already working on it. This happens, so our recommendation is to take any feedback you’ve received and go forth and pull request again – or create your own open source project.</p>
+
+
+      <p class="last-updated">Last updated Apr 4, 2014</p>
+    </div>
+  </div>
+</article>
+
+
+  <footer>
+    <div class="wrap">
+      <span class="mega-octicon octicon-mark-github"></span>
+      <p>
+        <a href="https://github.com/">GitHub</a> is the best way to build and ship software.<br>
+        Powerful collaboration, code review, and code management for open source and private projects.
+      </p>
+    </div>
+  </footer>
+
+
+
+</body></html>
