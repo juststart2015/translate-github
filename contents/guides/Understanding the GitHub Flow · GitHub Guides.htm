@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- saved from url=(0044)https://guides.github.com/introduction/flow/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
@@ -38,8 +38,8 @@
   <header>
     <div class="wrap">
       <ul class="links">
-        <li><a href="https://www.youtube.com/githubguides">Video Guides</a></li>
-        <li><a href="https://help.github.com/">GitHub Help</a></li>
+        <li><a href="https://www.youtube.com/githubguides">Guides 视频</a></li>
+        <li><a href="https://help.github.com/">GitHub 帮助</a></li>
         <li class="nav-github"><a href="https://github.com/">GitHub.com</a></li>
         <li class="nav-rss"><a href="https://guides.github.com/feed/index.xml"><span class="octicon octicon-rss"></span></a></li>
       </ul>
@@ -54,13 +54,13 @@
       <div class="icon-container">
         <span class="mega-octicon octicon-git-branch"></span>
       </div>
-      <h1>Understanding the GitHub Flow</h1>
+      <h1>了解 GitHub Flow</h1>
       <span class="article-read-time article-meta">
-        <span class="octicon octicon-clock"></span> 5 minute read
+        <span class="octicon octicon-clock"></span> 5 分钟阅读
       </span>
       
       <a class="article-pdf article-meta" href="https://guides.github.com/pdfs/githubflow-online.pdf" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;PDF Download&#39;, &#39;Click&#39;, &#39;githubflow-online.pdf&#39;]);">
-        <span class="octicon octicon-cloud-download"></span> Download PDF version
+        <span class="octicon octicon-cloud-download"></span> 下载 PDF 版本
       </a>
       
     </div>
@@ -71,7 +71,7 @@
     
 
     <div class="markdown-body content-body full-width">
-      <p>GitHub Flow is a lightweight, branch-based workflow that supports teams and projects where deployments are made regularly. This guide explains how and why GitHub Flow works.</p>
+      <p>GitHub Flow 是一个轻量级的、以分支为基础的工作流，非常适合那些一直频繁的在部署系统的团队和项目。这篇指南将讲解 GitHub Flow 是如何工作的以及为什么它生效了。</p>
 
 <script type="text/javascript" src="./Understanding the GitHub Flow · GitHub Guides_files/flow.js"></script>
 
@@ -134,78 +134,78 @@
 <div class="flow-content">
 
   <div class="panel-content js-panel-content js-panel-content-branch active" data-step="branch">
-    <h3>Create a branch</h3>
+    <h3>创建一个分支</h3>
 
-    <p>When you're working on a project, you're going to have a bunch of different features or ideas in progress at any given time – some of which are ready to go, and others which are not. Branching exists to help you manage this workflow.</p>
+    <p>当你致力于一个项目时，你可能突然会有很多不同的建设性的功能或想法，一些可以马上动手实施，一些还不可以。分支的存在，将有效的帮助你管理这些不同想法的实施过程。</p>
 
-    <p>When you create a branch in your project, you're creating an environment where you can try out new ideas. Changes you make on a branch don't affect the <code>master</code> branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.</p>
+    <p>当你在你的项目中创建了一个分支，你就创建了一个可以让你尝试新想法的工作环境。你在分支中的变动不会影响到 <code>master</code> 分支，所以你可以任意的进行测试、做新版本等操作而不用担心被融合，除非你已经准备好跟你的队友审核这段代码。</p>
 
-    <h4>ProTip</h4>
+    <h4>专业建议</h4>
 
-    <p>Branching is a core concept in Git, and the entire GitHub Flow is based upon it. There's only one rule: anything in the <code>master</code> branch is always deployable.</p>
+    <p>分支是 Git 中的一个核心概念，整个 GitHub Flow 都是以这个为基础的。它只有一条规则：任何 <code>master</code> 分支上的都一定是要发布实施的。</p>
 
-    <p>Because of this, it's extremely important that your new branch is created off of master when working on a feature or a fix. Your branch name should be descriptive (e.g., <code>refactor-authentication</code>, <code>user-content-cache-key</code>, <code>make-retina-avatars</code>), so that others can see what is being worked on.</p>
+    <p>所以，当开发一个新功能或完成一个修复时，在 master 上创建一个新分支，都是极为重要的一步。你的分支名必须要很好的描述这个分支（例如, <code>refactor-authentication</code>, <code>user-content-cache-key</code>, <code>make-retina-avatars</code>），这样别人才能够知道这个分支是用来做什么的。</p>
 
   </div>
 
   <div class="panel-content js-panel-content js-panel-content-commits" data-step="commits">
-    <h3>Add commits</h3>
+    <h3>增加新版本</h3>
 
-    <p>Once your branch has been created, it's time to start making changes. Whenever you add, edit, or delete a file, you're making a commit, and adding them to your branch. This process of adding commits keeps track of your progress as you work on a feature branch.</p>
+    <p>一旦你创建了新分支，你就可以开始做变更了。不论你何时增加、编辑或删除一个文件，你都是在做一个新的版本，你可以把他们加入到你的分支上。这个新增版本的过程，就跟踪了你在这个功能分支上的进展情况。</p>
 
-    <p>Commits also create a transparent history of your work that others can follow to understand what you've done and why. Each commit has an associated commit message, which is a description explaining why a particular change was made. Furthermore, each commit is considered a separate unit of change. This lets you roll back changes if a bug is found, or if you decide to head in a different direction.</p>
+    <p>版本等同于创建了一个关于你工作情况的透彻的历史过程，这样别人就能跟随这个来了解你所做的以及为什么要这样做。每个版本都相应有一个用来叙述解释为什么要做这个改变的版本留言。此外，每个版本都被认为是一个单独的更新单位。这将允许你在发现bug时、或者你决定转向另一个方向时回滚这些变更。</p>
 
-    <h4>ProTip</h4>
+    <h4>专业建议</h4>
 
-    <p>Commit messages are important, especially since Git tracks your changes and then displays them as commits once they're pushed to the server. By writing clear commit messages, you can make it easier for other people to follow along and provide feedback.</p>
+    <p>版本留言是非常非常重要的，特别是当 Git 开始跟踪你的变更并推送到服务器上作为版本显示时。通过书写一个清晰明了的版本留言，你可以让别人更容易跟随你的项目以及给你提供反馈。</p>
 
   </div>
 
   <div class="panel-content js-panel-content js-panel-content-pr" data-step="pr">
-    <h3>Open a Pull Request</h3>
+    <h3>开始一个 Pull Request</h3>
 
-    <p>Pull Requests initiate discussion about your commits. Because they're tightly integrated with the underlying Git repository, anyone can see exactly what changes would be merged if they accept your request.</p>
+    <p>Pull Requests 用来发起一个关于你的版本的讨论。因为他们与底层 Git 仓库是紧密相联的，所以如果他们接受了你的 request ，任何人都可以完整的看到哪些变更将会被融合。</p>
 
-    <p>You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.</p>
+    <p>在开发过程中的任意时间点你都可以开始一个 Pull Request ：当你想到了一点点或者一点代码都没有，但你可以展示一些截图或大致想法时；当你遇到问题卡住了需要帮助或建议时；甚至当你准备好别人来审核你的工作时。通过在你的 Pull Request 信息中使用 GitHub 的“@mention”系统，你可以向特定的人或团队寻求反馈，而不用管他们现在是否近在眼前亦或者远在天边。</p>
 
-    <h4>ProTip</h4>
+    <h4>专业建议</h4>
 
-    <p>Pull Requests are useful for contributing to open source projects and for managing changes to shared repositories. If you're using a Fork &amp; Pull Model, Pull Requests provide a way to notify project maintainers about the changes you'd like them to consider. If you're using a Shared Repository Model, Pull Requests help start code review and conversation about proposed changes before they're merged into the master branch.</p>
+    <p>Pull Requests 对于贡献开源项目以及管理公有共享仓库的更新是非常有用的。如果你正在使用 Fork &amp; Pull 模式，Pull Requests 给你提供了一种方式来通知项目管理者，你希望他们考虑你做的变更。如果你正在使用一个 Shared Repository 模式（共享仓库模式），在这些变更被融合进 master 分支之前，Pull Requests 能帮助你们开始对所提出的变更进行讨论以及代码审查。</p>
 
   </div>
 
   <div class="panel-content js-panel-content js-panel-content-code-review" data-step="code-review">
 
-    <h3>Discuss and review your code</h3>
+    <h3>讨论、审核你的代码</h3>
 
-    <p>Once a Pull Request has been opened, the person or team reviewing your changes may have questions or comments. Perhaps the coding style doesn't match project guidelines, the change is missing unit tests, or maybe everything looks great and props are in order. Pull Requests are designed to encourage and capture this type of conversation.</p>
+    <p>一旦开启了一个 Pull Request ，审核你的变更的个人或团队可能会有问题或新的建议。可能代码风格不适合项目准则、变更缺少单元测试、又或者一切看起来很好并且井然有序。Pull Requests 就是被设计用于鼓励和引发这种类型的讨论。</p>
 
-    <p>You can also continue to push to your branch in light of discussion and feedback about your commits. If someone comments that you forgot to do something or if there is a bug in the code, you can fix it in your branch and push up the change. GitHub will show your new commits and any additional feedback you may receive in the unified Pull Request view.</p>
+    <p>你也可以根据对你版本的讨论和反馈，继续推送新代码到你的分支上。如果某人的评论指出了你忘做的事或者代码中的 bug ，你也可以在你的分支中修复它并推送这个变更。GitHub 将会在同一个 Pull Request 中显示你的新版本和任何你可能接纳的新的反馈。</p>
+    <h4>专业建议</h4>
 
-    <h4>ProTip</h4>
-
-    <p>Pull Request comments are written in Markdown, so you can embed images and emoji, use pre-formatted text blocks, and other lightweight formatting.</p>
+    <p>Pull Request 是用 Markdown 编写评论的，所以你可以插入图片和表情符号、用预格式化的文本块以及其他轻量级格式。</p>
 
   </div>
 
   <div class="panel-content js-panel-content js-panel-content-deploy" data-step="deploy">
 
-    <h3>Deploy</h3>
+    <h3>部署</h3>
 
-    <p>Once your pull request has been reviewed and the branch passes your tests, you can deploy your changes to verify them in production. If your branch causes issues, you can roll it back by deploying the existing master into production.</p>
+    <p>一旦你的 pull request 被审核通过，并且分支通过了你们的测试，你就可以部署你的变更以便在实际产品上验证他们。如果你的分支引发了问题，你可以通过部署现有的主分支到产品上来实现回滚操作。</p>
   </div>
 
   <div class="panel-content js-panel-content js-panel-content-merge" data-step="merge">
 
-    <h3>Merge</h3>
+    <h3>融合</h3>
 
-    <p>Now that your changes have been verified in production, it is time to merge your code into the master branch.</p>
+    <p>现在你的变更已经在实际产品上验证过了，是时候把你的代码融合进主分支了。</p>
 
-    <p>Once merged, Pull Requests preserve a record of the historical changes to your code. Because they're searchable, they let anyone go back in time to understand why and how a decision was made.</p>
+    <p>一旦融合，Pull Requests 就会保存一个你代码的历史变更记录。因为他们是可搜索的，这就使得任何人都可以回顾了解当初为什么以及如何做这个决定的。</p>
 
-    <h4>ProTip</h4>
+    <h4>专业建议</h4>
 
-    <p>By incorporating certain keywords into the text of your Pull Request, you can associate issues with code. When your Pull Request is merged, the related issues are also closed. For example, entering the phrase <code>Closes #32</code> would close issue number 32 in the repository. For more information, check out our <a href="https://help.github.com/articles/closing-issues-via-commit-messages">help article</a>.</p>
+    <p>通过结合你的 Pull Request 文本中的一些关键字，你可以用代码关联事务卡片。当你的 Pull Request 被融合了，这些相关的事务卡片也就被关闭了。例如：输入语句 <code>Closes #32</code> ，就会关闭仓库中号码为32的事务卡片。更多信息，请参阅我们的<a href="https://help.github.com/articles/closing-issues-via-commit-messages">帮助文档</a>。
+</p>
 
   </div>
 
@@ -222,7 +222,7 @@
 
 
 
-      <p class="last-updated">Last updated Dec 12, 2013</p>
+      <p class="last-updated">最后更新 2013-12-12<br>翻译 2015.9.19 <a href="https://github.com/juststart2015" target = "_blank">juststart2015</a></p>
     </div>
   </div>
 </article>
@@ -232,8 +232,8 @@
     <div class="wrap">
       <span class="mega-octicon octicon-mark-github"></span>
       <p>
-        <a href="https://github.com/">GitHub</a> is the best way to build and ship software.<br>
-        Powerful collaboration, code review, and code management for open source and private projects.
+        <a href="https://github.com/">GitHub</a> 是最好的创建及保存软件的选择。<br>
+        为开源及私有项目提供强大的协作支持、代码审查及代码管理。
       </p>
     </div>
   </footer>
