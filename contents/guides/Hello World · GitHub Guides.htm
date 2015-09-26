@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- saved from url=(0049)https://guides.github.com/activities/hello-world/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8">
@@ -38,13 +38,13 @@
   <header>
     <div class="wrap">
       <ul class="links">
-        <li><a href="https://www.youtube.com/githubguides">Video Guides</a></li>
-        <li><a href="https://help.github.com/">GitHub Help</a></li>
+        <li><a href="https://www.youtube.com/githubguides">Guides 视频</a></li>
+        <li><a href="https://help.github.com/">GitHub 帮助</a></li>
         <li class="nav-github"><a href="https://github.com/">GitHub.com</a></li>
         <li class="nav-rss"><a href="https://guides.github.com/feed/index.xml"><span class="octicon octicon-rss"></span></a></li>
       </ul>
 
-      <a href="https://guides.github.com/"><img src="./Hello World · GitHub Guides_files/logo@2x.png" width="136" height="25" alt="GitHub Guides logo"></a>
+      <a href="GitHub Guides.htm"><img src="./Hello World · GitHub Guides_files/logo@2x.png" width="136" height="25" alt="GitHub Guides logo"></a>
     </div>
   </header>
 
@@ -56,7 +56,7 @@
       </div>
       <h1>Hello World</h1>
       <span class="article-read-time article-meta">
-        <span class="octicon octicon-clock"></span> 10 minute read
+        <span class="octicon octicon-clock"></span> 10 分钟阅读
       </span>
       
     </div>
@@ -66,210 +66,217 @@
   <div class="wrap">
     
     <div class="toc-wrapper">
-      <ol class="toc js-toc"><li><a href="https://guides.github.com/activities/hello-world/#intro" class="active">Intro</a></li><li><a href="https://guides.github.com/activities/hello-world/#repository" class="">Create a Repository</a></li><li><a href="https://guides.github.com/activities/hello-world/#issue">Open an Issue</a></li><li><a href="https://guides.github.com/activities/hello-world/#branch">Create a Branch</a></li><li><a href="https://guides.github.com/activities/hello-world/#commit">Make a Commit</a></li><li><a href="https://guides.github.com/activities/hello-world/#pr">Open a Pull Request</a></li><li><a href="https://guides.github.com/activities/hello-world/#merge">Merge Pull Request</a></li></ol>
+      <ol class="toc js-toc">
+        <li><a href="#intro" class="active">简介</a></li>
+        <li><a href="#repository" class="">创建仓库</a></li>
+        <li><a href="#issue">开启事务卡片</a></li>
+        <li><a href="#branch">创建分支</a></li>
+        <li><a href="#commit">生成版本</a></li>
+        <li><a href="#pr">开启 Pull Request</a></li>
+        <li><a href="#merge">融合 Pull Request</a></li>
+      </ol>
     </div>
     
 
     <div class="markdown-body content-body ">
       <p><a id="intro" title="Intro" class="toc-item"></a></p>
 
-<p>The <strong>Hello World</strong> project is a time-honored tradition in computer programming. It is a simple exercise that gets you started when learning something new. Let’s get started with GitHub!</p>
+<p><strong>Hello World</strong> 在电脑编程中是一个历史悠久的传统项目。当你在学习一些新东西时，它让你开始一个简单的练习。</p>
 
-<p>GitHub is a platform for hosting and collaborating on projects. You don’t have to worry about losing data on your hard drive or managing a project across multiple computers — sync from anywhere. Most importantly, GitHub is a collaborative and asynchronous workflow for building software better, together.</p>
+<p>GitHub 是一个在各个项目中用于托管和合作的平台。你不用担心你硬盘里的数据丢失，或者穿梭在多台电脑间管理一个项目 — sync(同步)从任何地方。最重要的是，GitHub 是一个用于更好在一起开发软件的协同异步工作流。</p>
 
-<p>This guide walks you through the GitHub Essentials: <strong>Repositories</strong>, <strong>Branches</strong>, <strong>Commits</strong>, <strong>Issues</strong> and <strong>Pull Requests</strong>.</p>
+<p>这个指南引领你穿越 GitHub 的各个要点：<strong>仓库(Repository)</strong>、<strong>分支(Branch)</strong>、<strong>版本(Commit)</strong>、<strong>事务卡片(Issue)</strong> 以及 <strong>Pull Requests</strong>。</p>
+<p>拥有这些技能，你将会走的更远。通过这个 <code>hello-world</code> 仓库，你将有一个地方来贮存你的想法 (又名未来仓库，就像 <a href="https://github.com/jlord/hello-world">jlord/hello-world</a>)、资源或其他常规笔记，甚至和别人讨论一些事情 (就像 <a href="https://github.com/holman/feedback">holman/feedback</a>)。</p>
 
-<p>With these skills, you’ll go far. And with this <code>hello-world</code> repository you’ll have a place to store ideas (aka future repositories, like <a href="https://github.com/jlord/hello-world">jlord/hello-world</a>), resources or other general notes, even discuss things with others (like <a href="https://github.com/holman/feedback">holman/feedback</a>).</p>
+<h4>正式使用 &amp; 无需代码</h4>
 
-<h4>Install &amp; Code Free Zone</h4>
+<p>我们将在本教程内用 GitHub.com 来完成这些任务，所以你不需要知道命令行甚至不需要安装 Git (就是那个 GitHub 所基于的变更追踪软件)。你甚至不需要知道如何编码。当然，如果你没有帐号的话，你需要注册一个！</p>
 
-<p>We’re going to complete the tasks in this tutorial using GitHub.com, so you don’t have to know the command line or even install Git (which is the change-tracking software GitHub is built on). You don’t even need to know how to code. You will, however, need a GitHub account, so sign up if you don’t have one!</p>
-
-<blockquote><p><strong>Tip:</strong> Open this guide in a separate browser window (or tab) so you can see it while you complete the steps in the tutorial.</p></blockquote>
+<blockquote><p><strong>小贴士:</strong> 在单独的浏览器窗口(或标签)打开本指南，这样你就可以同时看到你在本教程内完成这些步骤。</p></blockquote>
 
 <p><a id="repository" title="Create a Repository" class="toc-item"></a></p>
 
-<h2>Create a Repository</h2>
+<h2>创建仓库</h2>
 
-<p>A <strong>repository</strong> is the basic unit of GitHub, most commonly a single project. Repositories can contain folders and files, including images – anything your project needs. Because we recommend including a README, or a file describing the project, in every repository, GitHub makes it easy to add one at the same time you create your new repository. <em>It also offers other common options such as a license file, but we can skip that for now.</em></p>
+<p>一个 <strong>仓库(Repository)</strong> 是 GitHub 的一个基础单元，常常也是一个单独的项目。仓库能放置文件夹和文件，包含图片 – 任何你项目需要的文件。在你创建新仓库的同时，由于我们推荐在每一个仓库包含一个 README ，或一个该项目的描述文件，所以你可以很容易的添加一个。<em> GitHub 也提供其他常规设置，例如一个许可文件，但我们现在可以跳过这个步骤了</em></p>
 
-<h3>To create a new repository</h3>
+<h3>创建一个新仓库</h3>
 
 <ol>
-<li>Click the <span class="octicon octicon-plus"></span> icon next to your username, top-right.</li>
-<li>Name your repository <code>hello-world</code>.</li>
-<li>Write a short description.</li>
-<li>Select <strong>Initialize this repository with a README</strong>.</li>
+<li>点击 <span class="octicon octicon-plus"></span> 图标，在你的用户名后面，顶部右侧。</li>
+<li>命名你的仓库 <code>hello-world</code>。</li>
+<li>写一个简短的描述( Description )。</li>
+<li>选择 <strong>Initialize this repository with a README</strong>.</li>
 </ol>
 
 
 <p><img src="./Hello World · GitHub Guides_files/create-new-repo.png" alt="new-repo-form"></p>
 
-<p>Click <strong>Create repository</strong>. Boom, repository! <img class="emoji" title=":boom:" alt=":boom:" src="./Hello World · GitHub Guides_files/1f4a5.png" height="20" width="20" align="absmiddle"></p>
+<p>点击 <strong>Create repository</strong>. 砰~叭~, repository! <img class="emoji" title=":boom:" alt=":boom:" src="./Hello World · GitHub Guides_files/1f4a5.png" height="20" width="20" align="absmiddle"></p>
 
 <p><a id="issue" title="Open an Issue" class="toc-item"></a></p>
 
-<h2>Open an Issue</h2>
+<h2>开启事务卡片</h2>
 
-<p>An <strong>Issue</strong> is a note on a repository about something that needs attention. It could be a bug, a feature request, a question or lots of other things. On GitHub you can label, search and assign Issues, making managing an active project easier.</p>
+<p>一个 <strong>事务卡片(Issue)</strong> 是一个仓库的便签，涉及一些需要关注的东西。它可能是个 bug 、是个功能请求、是个问题、甚至其他许多东西。在 GitHub 上，你可以标记、搜索、分类事务卡片，更容易的管理一个进行中的项目。</p>
 
-<p>You’ve got a repository now, but it’s pretty bare. It could use a README with more information in it so that people know what is going on. Open an Issue!</p>
+<p>你现在已经有了一个仓库了，但还颇空。可以在 README 里添加更多的信息，这样别人就知道这个仓库的用途了。来开启一个事务卡片吧！</p>
 
-<h3>Open an Issue for README edits</h3>
+<h3>为编辑 README 开启一个事务卡片</h3>
 
 <ol>
-<li>Click the <span class="octicon octicon-issue-opened"></span> <strong>Issues</strong> tab from the sidebar.</li>
-<li>Click <strong>New Issue</strong>.</li>
-<li>Give your Issue a title and description.</li>
+<li>在侧边栏点击 <span class="octicon octicon-issue-opened"></span> <strong>Issues</strong>。</li>
+<li>点击 <strong>New Issue</strong>。</li>
+<li>给你的 Issue 一个标题和描述。</li>
 </ol>
 
 
 <p><img src="./Hello World · GitHub Guides_files/issue.png" alt="issue"></p>
 
-<p>Click <strong>Submit new Issue</strong> when you’re done. Now this issue has a permanent home (URL) that you can reference even after it is closed.</p>
+<p>当你完成以上步骤，点击 <strong>Submit new Issue</strong>。现在这个事务卡片有一个自己的永久主页了，哪怕在它关闭之后你也可以引用它。</p>
 
-<p>Next, work towards editing your README and closing this issue.</p>
+<p>接下来，开始编辑你的 README ，然后关闭这个事务卡片。</p>
 
 <p><a id="branch" title="Create a Branch" class="toc-item"></a></p>
 
-<h2>Create a Branch</h2>
+<h2>创建分支</h2>
 
-<p><strong>Branching</strong> is the way to work on different parts of a repository at one time.</p>
+<p><strong>分支(Branching)</strong> 是一种在同一时间同一仓库内编辑不同部分的方法。</p>
 
-<p>When you create a repository, by default it has one branch with the name <code>master</code>. You could keep working on this branch and have only one, that’s fine. But if you have another feature or idea you want to work on, you can create another branch, starting from <code>master</code>, so that you can leave <code>master</code> in its working state.</p>
+<p>当你创建了一个新仓库，默认会生成一个名为 <code>master</code> 的分支。你将在这唯一的分支上进行开发，那真不错。但如果你想开发一个其他的功能或新的想法，你可以创建另一个分支，复制于 <code>master</code> ，这样你就可以把 <code>master</code> 抽离工作状态了。</p>
 
-<p>When you create a branch, you’re making a copy of the original branch as it was at that point in time (like a photo snapshot). If the original branch changes while you’re working on your new branch, no worries, you can always pull in those updates.</p>
+<p>当你创建一个分支同时，你就从原分支上做了一份拷贝(就像相片快照)。如果原分支有更新，而你正致力于新分支时，也不用担心，你仍然可以随时推送这些更新。</p>
 
 <p><a href="./Hello World · GitHub Guides_files/branching.png"><img src="./Hello World · GitHub Guides_files/branching.png" alt="a branch"></a></p>
 
-<p>You may have, at some point in your life, saved different versions of a file like, “story.txt”, “story-joe-edit.txt”, “story-sue-edit.txt”. Branches accomplish the same goals but are easier to manage on GitHub repositories.</p>
+<p>在你的生涯中，你可能保存了很多不同的版本文件，例如：“story.txt”, “story-joe-edit.txt”, “story-sue-edit.txt”。分支也是为了完成这同一个目的，不过它更易于在 GitHub 仓库上管理。</p>
 
-<p>At GitHub, our developers, writers, and designers use branches for keeping bug fixes and feature work separate from our <code>master</code> (production) branch. When a feature or fix is ready, the branch is merged into <code>master</code>.</p>
+<p>在 GitHub 上，我们的开发者、写作者、设计者用分支来独立于 <code>master</code> (production) 不断进行bug的修复和功能的开发。当功能完成、 bug 修复完成，这个分支就可以融合进 <code>master</code> 分支。</p>
 
-<h3>To create a new branch</h3>
+<h3>创建一个新分支</h3>
 
 <ol>
-<li>Go to your new repository <code>hello-world</code>.</li>
-<li>Click the drop down at the top of the file list that says <strong>branch: master</strong>.</li>
-<li>Type a branch name, <code>readme-edits</code>, into the new branch text box.</li>
-<li>Select the blue <strong>Create branch</strong> box or hit “Enter” on your keyboard.</li>
+<li>进入你的新仓库 <code>hello-world</code>。</li>
+<li>点击文件列表顶部名为 <strong>branch: master</strong> 的下拉菜单。</li>
+<li>在新分支文本框内，输入一个分支名, <code>readme-edits</code>。</li>
+<li>选择蓝色的 <strong>Create branch</strong> 框，或敲击键盘上的 “Enter” 键。</li>
 </ol>
 
 
 <p><img src="./Hello World · GitHub Guides_files/readme-edits.gif" alt="branch gif"></p>
 
-<p>Now you have two branches, <code>master</code> and <code>readme-edits</code>. They look exactly the same, but not for long! Next we’ll add our changes to the new branch.</p>
+<p>现在你有两个分支了，<code>master</code> 和 <code>readme-edits</code>。他们看起来完全一样，但不会太久！接下来我们将在新分支上新增我们的更新。</p>
 
 <p><a id="commit" title="Make a Commit" class="toc-item"></a></p>
 
-<h2>Make a commit</h2>
+<h2>生成版本</h2>
 
-<p>On GitHub, saved changes are called <strong>commits</strong>. Commits are pretty glorious, because a bunch of them together read like the history of your project.</p>
+<p>在 GitHub 上，保存的变更叫做 <strong>commits(版本)</strong> 。版本是非常有用的，因为这一连串的版本读起来就像是你项目的历史。</p>
 
-<p>Each commit has an associated <strong>commit message</strong>, which is a description explaining why a particular change was made. Thanks to these messages, you and others can read through commits and understand what you’ve done and why.</p>
+<p>每个版本都有一个相关的 <strong>commit message (版本留言)</strong> ，详细描述解释了为什么要做这个变更。多亏这些留言，你和其他人可以通读这些版本并了解你做了哪些变更以及为什么要做这些变更。</p>
 
-<p>You should still be on the code view for your <code>readme-edits</code> branch, now make some changes!</p>
+<p>你还是得根据代码查看你的 <code>readme-edits</code> 分支，现在来做些变更吧！</p>
 
-<h4>To commit changes</h4>
+<h4>提交更新</h4>
 
 <ol>
-<li>Click the README file.</li>
-<li>Click the pencil icon in the upper right corner of the file view to edit.</li>
-<li>In the editor, write some text, tell a bit about yourself.</li>
-<li>Write a commit message that describes your changes.</li>
+<li>点击 README file。</li>
+<li>点击文件视图的右上角铅笔图标进行编辑。</li>
+<li>在编辑器内，写一些文本，告知一些关于你自己的事情。</li>
+<li>写一个描述你的更新的版本留言。</li>
 </ol>
 
 
 <p><img src="./Hello World · GitHub Guides_files/commit.png" alt="commit"></p>
 
-<p>Click <strong>Commit changes</strong>. Now these changes have been made to the README file on your <code>readme-edits</code> branch and now this branch contains different content and commits than <code>master</code> (as it should!).</p>
+<p>点击 <strong>Commit changes</strong> 。现在这些更新已经被做进你的 <code>readme-edits</code> 分支的 README 文件中了，现在这个分支包含了与 <code>master</code> 分支不同的内容和版本(正如预料的那样！)。</p>
 
 <p><a id="pr" title="Open a Pull Request" class="toc-item"></a></p>
 
-<h2>Open a Pull Request</h2>
+<h2>开启 Pull Request</h2>
 
-<p>Pull Requests are the heart of collaboration on GitHub. When you make a <strong>pull request</strong>, you’re proposing your changes and requesting that someone pull in your contribution - aka merge them into their branch. GitHub’s Pull Request feature allows you to compare the content on two branches. The changes, additions and subtractions, are shown in green and red and called <strong>diffs</strong> (differences).</p>
+<p>Pull Requests 是 GitHub 上协作的核心。当你开启一个 <strong>pull request</strong> ，你就提交了你的变更并且希望他们接受你的贡献 - 又名融合进他们的分支。 GitHub 的 Pull Request 功能允许你对比两个分支上的内容。这些更新、新增以及删减显示为绿色和红色，称作 <strong>diffs</strong> （差异）。</p>
 
-<p>As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help when you’re stuck.</p>
+<p>一旦你做了变更，你可以开启一个 Pull Request 。人们甚至常用 Pull Request 在代码完成前开始一个关于版本(代码审查)的讨论。通过这个方法你就可以获得相应的反馈，而不论是你干劲十足时又或者是卡住了需要帮助时。</p>
 
-<p>By using GitHub’s <a href="https://github.com/blog/821-mention-somebody-they-re-notified">@mention system</a> in your Pull Request message, you can ask for feedback from specific people or teams, whether they’re down the hall or 10 time zones away.</p>
+<p>通过在你的 Pull Request 留言中使用 GitHub 的 <a href="https://github.com/blog/821-mention-somebody-they-re-notified">@mention 系统</a>，你可以向特定的人或团体寻求反馈，而不论他们远在天边抑或近在眼前。</p>
 
-<p>You can even open, as we’re doing here, a Pull Request in your own repository and merge it yourself. It’s a great way to learn to process before working on larger projects.</p>
+<p>当我们在这里一同工作时，你甚至也可以在你自己的仓库开启一个 Pull Request 然后自己融合它。在致力于大项目前，这是一个很好的学习做事方法的途径。</p>
 
-<h4>Create a Pull Request for changes to the README</h4>
+<h4>为 README 的变更创建一个 Pull Request</h4>
 
-<p><em>Click on the image for a larger version</em></p>
+<p><em>跟随图片点击来创建一个大版本</em></p>
 
 <table>
 <thead>
 <tr>
-<th> Step </th>
-<th> Screenshot </th>
+<th> 步骤 </th>
+<th> 屏幕动图 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td> Click the <span class="octicon octicon-git-pull-request"></span> Pull Request icon on the sidebar, then from the Pull Request page, click the green <strong>New pull request</strong> button. </td>
+<td> 在侧边栏点击 <span class="octicon octicon-git-pull-request"></span> Pull Request 图标，然后在 Pull Request 页面，点击绿色的 <strong>New pull request</strong> 按钮。 </td>
 <td> <img src="./Hello World · GitHub Guides_files/73059f0a-b5f7-11e3-928e-745e9f9a5c75.gif" alt="create pr"> </td>
 </tr>
 <tr>
-<td> Select the branch you made, <code>readme-edits</code>, to compare with <code>master</code> (the original). </td>
+<td> 选择你创建的分支， <code>readme-edits</code> ，与 <code>master</code> (原始分支)做对比。 </td>
 <td> <a href="./Hello World · GitHub Guides_files/pick-branch.png"><img src="./Hello World · GitHub Guides_files/pick-branch.png" alt="branch"></a> </td>
 </tr>
 <tr>
-<td> Look over your changes in the diffs on the Compare page, make sure they’re what you want to submit. </td>
+<td> 在对比页面的差异上查看你的变更，确定它们就是你想要提交的。 </td>
 <td> <a href="./Hello World · GitHub Guides_files/diff.png"><img src="./Hello World · GitHub Guides_files/diff.png" alt="diff"></a> </td>
 </tr>
 <tr>
-<td> When you’re satisfied that these are the changes you want to submit, click the big green <strong>Create Pull Request</strong> button. </td>
+<td> 当你确信这些就是你想要提交的变更时，点击这个大大的绿色的 <strong>Create Pull Request</strong> 按钮。 </td>
 <td> <a href="./Hello World · GitHub Guides_files/create-pr.png"><img src="./Hello World · GitHub Guides_files/create-pr.png" alt="create-pull"></a> </td>
 </tr>
 <tr>
-<td> Give your pull request a title and since it relates directly to an open issue, include “fixes #” and the issue number in the title. Write a brief description of your changes. </td>
+<td> 给你的 pull request 一个标题，因为它直接关系到一个公开的事务卡片，包含 “fixes #” 以及标题中的事务卡片的号码。为你的变更写一个简短的描述。 </td>
 <td> <img src="./Hello World · GitHub Guides_files/pr-form.png" alt="pr-form"></td>
 </tr>
 </tbody>
 </table>
 
 
-<p>When you’re done with your message, click <strong>Create pull request</strong>!</p>
+<p>当你写完了你的留言，点击 <strong>Create pull request</strong>!</p>
 
 <hr>
 
-<blockquote><p><strong>Tip</strong>: You can use <a href="https://github.com/blog/1289-emoji-autocomplete">emoji</a> and <a href="https://github.com/blog/1347-issue-attachments">drag and drop images and gifs</a> onto comments and Pull Requests.</p></blockquote>
+<blockquote><p><strong>小贴士</strong>: 你可以在版本和 Pull Requests 中用 <a href="https://github.com/blog/1289-emoji-autocomplete">emoji</a> 以及<a href="https://github.com/blog/1347-issue-attachments">拖放图片和 gifs 动图</a></p></blockquote>
 
 <p><a id="merge" title="Merge Pull Request" class="toc-item"></a></p>
 
-<h2>Merge your Pull Request</h2>
+<h2>融合你的 Pull Request</h2>
 
-<p>It’s time to bring your changes together – merge your <code>readme-edits</code> branch into the <code>master</code> branch.</p>
+<p>是时候把你的变更集合起来了 - 把 <code>readme-edits</code> 分支融合进 <code>master</code> 分支。</p>
 
 <ol>
-<li>Click the green button to merge the changes into <code>master</code>.</li>
-<li>Click <strong>Confirm merge</strong>.</li>
-<li>Go ahead and delete the branch, since its changes have been incorporated, with the <strong>Delete branch</strong> button in the purple box.</li>
+<li>点击那个绿色的按钮来把更新融合进 <code>master</code> 。</li>
+<li>点击 <strong>Confirm merge</strong>.</li>
+<li>继续往下通过紫色框内的 <strong>Delete branch</strong> 按钮来删除这个分支，因为它的更新已经被融合了。</li>
 </ol>
 
 
 <p><img src="./Hello World · GitHub Guides_files/merge-button.png" alt="merge">
 <img src="./Hello World · GitHub Guides_files/delete-button.png" alt="delete"></p>
 
-<p>If you revisit the issue you opened, it’s now closed! Because you included “fixes #1” in your Pull Request title, GitHub took care of closing that issue when the Pull Request was merged!</p>
+<p>如果你再去查看你之前开启的事务卡片，它现在已经关闭了！因为你在你的 Pull Request 标题中包含了 “fixes #1” ，当 Pull Request 被融合的时候，GitHub 负责关闭该事务卡片！</p>
 
-<h3>Celebrate!</h3>
+<h3>祝贺你!</h3>
 
-<p>You’ve learned to make a pull request on GitHub! <img class="emoji" title=":tada:" alt=":tada:" src="./Hello World · GitHub Guides_files/1f389.png" height="20" width="20" align="absmiddle"> <img class="emoji" title=":octocat:" alt=":octocat:" src="./Hello World · GitHub Guides_files/octocat.png" height="20" width="20" align="absmiddle"> <img class="emoji" title=":zap:" alt=":zap:" src="./Hello World · GitHub Guides_files/26a1.png" height="20" width="20" align="absmiddle"></p>
+<p>你已经学会了在 GitHub 上创建一个 pull request ! <img class="emoji" title=":tada:" alt=":tada:" src="./Hello World · GitHub Guides_files/1f389.png" height="20" width="20" align="absmiddle"> <img class="emoji" title=":octocat:" alt=":octocat:" src="./Hello World · GitHub Guides_files/octocat.png" height="20" width="20" align="absmiddle"> <img class="emoji" title=":zap:" alt=":zap:" src="./Hello World · GitHub Guides_files/26a1.png" height="20" width="20" align="absmiddle"></p>
 
-<p>For your humblebrag, here are the things you accomplished in this tutorial: created a repository, branch, issue, and pull request, then merged a pull request! Show off your new <a href="https://help.github.com/articles/viewing-contributions">contribution squares</a>!</p>
+<p>为了你可以谦虚自夸，这里罗列你在此教程内完成的事项：创建一个仓库、分支、事务卡片以及 pull request ，然后融合 pull request ！炫耀你的新 <a href="https://help.github.com/articles/viewing-contributions">contribution squares(贡献广场)</a> 吧!</p>
 
-<p>If you want to learn more about the power of pull requests, we recommend reading the <a href="http://guides.github.com/overviews/flow/">GitHub Flow Guide</a>. You might also visit <a href="http://github.com/explore">GitHub Explore</a> and get involved in an Open Source project <img class="emoji" title=":octocat:" alt=":octocat:" src="./Hello World · GitHub Guides_files/octocat.png" height="20" width="20" align="absmiddle"></p>
+<p>如果你想学习更多的关于 pull requests 的用处，我们推荐你阅读 <a href="Understanding the GitHub Flow · GitHub Guides.htm">GitHub Flow Guide</a> 。你也可以访问 <a href="http://github.com/explore">GitHub Explore</a> 然后参与一个开源项目 <img class="emoji" title=":octocat:" alt=":octocat:" src="./Hello World · GitHub Guides_files/octocat.png" height="20" width="20" align="absmiddle"></p>
 
 <hr>
 
-<blockquote><p><strong>Tip</strong>: Check out our other <a href="http://guides.github.com/">Guides</a> and <a href="http://youtube.com/githubguides">YouTube Channel</a> for more GitHub how-tos.</p></blockquote>
+<blockquote><p><strong>小贴士</strong>: 查看我们其他的 <a href="GitHub Guides.htm">Guides</a> 以及 <a href="http://youtube.com/githubguides">YouTube Channel</a> 来获得更多的 GitHub 教程。</p></blockquote>
 
 
-      <p class="last-updated">Last updated May, 2014</p>
+      <p class="last-updated">最后更新 2014 5月<br/>翻译 2015.9.26 <a href="https://github.com/juststart2015" target = "_blank">juststart2015</a></p>
     </div>
   </div>
 </article>
@@ -279,8 +286,8 @@
     <div class="wrap">
       <span class="mega-octicon octicon-mark-github"></span>
       <p>
-        <a href="https://github.com/">GitHub</a> is the best way to build and ship software.<br>
-        Powerful collaboration, code review, and code management for open source and private projects.
+        <a href="https://github.com/">GitHub</a> 是最好的创建及保存软件的选择。<br>
+        为开源及私有项目提供强大的协作支持、代码审查及代码管理。
       </p>
     </div>
   </footer>
